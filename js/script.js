@@ -141,8 +141,6 @@ function reverseAutoCarousel(){
 
 // Autoplay
 
-var flag = true;
-
 const autoPlay = document.querySelector('.autoplay');
 const reverseAutoPlay = document.querySelector('.reverse');
 const stopAutoPlay = document.querySelector('.stop');
