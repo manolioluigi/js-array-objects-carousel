@@ -151,26 +151,21 @@ let stoppaTutto = setInterval(autoCarousel, 3000);
 
 autoPlay.addEventListener('click', function(){
     
-    if(flag == false){
+    clearInterval(stoppaTutto);
     stoppaTutto = setInterval(autoCarousel, 3000);
-    flag = true;
-    }
 
 });
 
 reverseAutoPlay.addEventListener('click', function(){
     
-    if(flag == false){
+    clearInterval(stoppaTutto);
     stoppaTutto = setInterval(reverseAutoCarousel, 3000);
-    flag = true;
-    }
-
+   
 });
 
 stopAutoPlay.addEventListener('click', function(){
     
     clearInterval(stoppaTutto);
-    flag = false;
 
 });
 
@@ -183,6 +178,5 @@ itemsSlider.addEventListener('mouseenter', function() {
 itemsSlider.addEventListener('mouseleave', function() {
 
     stoppaTutto = setInterval(autoCarousel, 3000);
-    flag = false;
 
 });
